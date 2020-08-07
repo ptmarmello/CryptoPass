@@ -1,0 +1,23 @@
+
+body{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    background-color: #f8f8fb;
+}
+.content{
+    margin-top: 5vw;
+    margin-left: 90px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 5vw;
+}
+
+.main{
+    margin: 0 auto;
+    padding-top: 24px;
+    align-content: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 100%;
+}

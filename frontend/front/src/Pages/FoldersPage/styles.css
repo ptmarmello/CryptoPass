@@ -1,0 +1,216 @@
+
+.main .grid-column {
+    display: grid;
+    column-gap: 24px;
+    row-gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-columns: 100px;
+    
+}
+
+.foldering .resume{
+    width: 100%;
+    max-height: auto;
+    border-radius: 8px;
+}
+.foldering .resume ul{
+    margin: 0 auto;
+    list-style-type: none;
+    padding: 0 0 4px 0;
+    justify-content: space-between;
+}
+
+.foldering .resume ul li, .resume ul li p{
+    margin: 0;
+    padding: 4px;
+}
+
+.foldering {
+    max-width: 360px;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 0 40px 0 rgba(94, 92, 154, .06);
+}
+
+.foldering .foldering-cover {
+    height: 120px;
+    padding-top: 32px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.foldering-cover{
+    background-image: url("../../assets/img/backgimage-2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.foldering .foldering-cover .foldering-cover-text,
+.foldering .foldering-cover .foldering-cover-title {
+    color: #000;
+    text-align: center
+}
+
+.foldering .foldering-cover .foldering-cover-title {
+    font-size: 1.5rem;
+    font-weight: 700
+}
+
+.foldering .foldering-cover .foldering-cover-text {
+    margin-top: 6px;
+    font-size: .875rem;
+    font-weight: 500
+}
+
+.foldering .foldering-info {
+    padding-bottom: 28px
+}
+
+.foldering .foldering-info .user-avatar {
+    margin: -30px auto 0
+}
+
+.foldering .foldering-subtitle,
+.foldering .foldering-text,
+.foldering .foldering-title {
+    text-align: center
+}
+
+.foldering .foldering-title {
+    margin-top: 8px;
+    font-size: 1.375rem;
+    font-weight: 700
+}
+
+.foldering .foldering-subtitle {
+    margin-top: 14px;
+    font-size: .875rem;
+    font-weight: 700
+}
+
+.foldering .foldering-text {
+    margin-top: 4px;
+    color: #adafca;
+    font-size: .75rem;
+    font-weight: 700;
+    text-transform: uppercase
+}
+.foldering .foldering-data {
+    margin-top: 4px;
+    color: #adafca;
+    font-size: .75rem;
+    font-weight: 700;
+    text-transform: uppercase
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 45%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    top: 0;
+    float:right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .flipper {
+    height: 100%;
+    width: 100%;
+    padding-bottom: 120%;
+    position: relative;
+  }
+  
+  @media (min-width: 576px) {
+  
+    .ratio-not-1-1 {
+      padding-bottom: calc(50% - 5px);
+    }
+  
+  }
+  
+  .flipper-card {
+    width: 100%;
+    max-width: 360px;
+    max-height: 313px;
+    height: 100%;
+    position: absolute;
+    -webkit-transform-style: preserve-3d;
+    
+    transform-style: preserve-3d;
+    transition: -webkit-transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  .folder-icon {
+    display: block;
+    width: auto;
+    height: auto;
+    position: relative;
+
+}
+  .foldering .foldering-info .folder-icon {
+    margin: -30px auto 0;
+    display: inline;
+    
+}
+  .flipper-front,
+  .flipper-back {
+    position: absolute;
+    width: 100%;
+    max-width: 360px;
+    max-height: 313px;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    background: #fff;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .flipper-back {
+    background: #fff;
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    justify-content: center;
+  }
+  
+  .flipper-card:hover, .flipper-card.flipper-is-flipped {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+  .modal-content-section{
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+  }
